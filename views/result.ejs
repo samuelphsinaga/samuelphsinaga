@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>API</title>
+  </head>
+  <body>
+    <h1>RESULT PAGE HERE ....</h1>
+    <% param1["Search"].forEach(function(movie){%>
+        <!-- <a href="<%= movie["Poster"]%>">Link Picture Movie</a> -->
+        <img src="<%= movie["Poster"]%>" alt="Mountain View" style="width:304px;height:228px;">
+        <li>Movie : <%= movie["Title"]%> - IMDB_id :<%= movie["imdbID"]%></li>
+      <%}) %>
+  </body>
+</html>
